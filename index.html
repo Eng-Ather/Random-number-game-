@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess number game</title>
+
+    <!--css file link-->
+    <link rel="stylesheet" href="guessnumber2.css">
+</head>
+
+<body>
+    <h1 style="color: green; font-size: 50px; text-align: center; ">
+        Guess Number Game</h1>
+   <br><br>
+   
+    <div class="first_block">
+        <div class="round" onclick="generate_number(1)">1</div>
+        <div class="round" onclick="generate_number(2)">2</div>
+        <div class="round" onclick="generate_number(3)">3</div>
+        <div class="round" onclick="generate_number(4)">4</div>
+        <div class="round" onclick="generate_number(5)">5</div>
+        <div class="round" onclick="generate_number(6)">6</div>
+    </div>
+    <br><br><br>
+
+    <div id="displayBoard">
+
+        <span class="selected"> Chose number </span>
+        <span class="selected"> Random Number</span>
+        <span class="selected"> Win or Lose </span>
+
+        <marquee class="reuslt_win">YOU WIN</marquee>
+        <marquee class="reuslt_lose">YOU LOSE</marquee>
+
+    </div>
+
+    <br><br><br>
+
+    <div id="result-board">
+        <div class="score">Round = 0</div>
+        <div class="score" style="color: green;">Win = 0 </div>
+        <div class="score" style="color: red;">Lose = 0</div>
+  </div>
+
+  <br><br><br>
+
+  <div style="width: 1000px; margin: 0 auto;">
+    <button type="button" onclick="location.reload()">NEWGAME</button>
+  </div>
+
+    <script src="guessnumber2.js"></script>
+
+</body>
+
+</html>
